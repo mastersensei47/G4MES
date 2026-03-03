@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SPARKING ZERO - MS47</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+}
+
+body{
+  background:#0e0e0e;
+  color:white;
+}
+
+/* ===== NAVBAR ===== */
+.navbar{
+  width:100%;
+  background:#111;
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:1000;
+  box-shadow:0 2px 15px black;
+}
+
+.nav-container{
+  max-width:1200px;
+  margin:auto;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 20px;
+}
+
+.logo{
+  font-size:22px;
+  font-weight:bold;
+  text-shadow:0 0 10px red;
+}
+
+.nav-links{
+  display:flex;
+  gap:20px;
+}
+
+.nav-links a{
+  color:white;
+  text-decoration:none;
+  font-weight:bold;
+  transition:0.3s;
+}
+
+.nav-links a:hover{
+  color:#ff0000;
+}
+
+/* ===== CONTENIDO ===== */
+main{
+  margin-top:130px;
+  padding:40px 20px;
+  max-width:1300px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+/* ===== HERO ===== */
+.hero{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:30px;
+  flex-wrap:wrap;
+}
+
+.video{
+  flex:1;
+  min-width:300px;
+}
+
+.video iframe{
+  width:100%;
+  height:300px;
+  border-radius:12px;
+  box-shadow:0 0 25px black;
+}
+
+.titulo{
+  flex:1;
+  text-align:center;
+  min-width:250px;
+}
+
+.video-centro{
+  margin-bottom:20px;
+  display:flex;
+  justify-content:center;
+}
+
+.video-centro iframe{
+  width:100%;
+  max-width:500px;
+  height:280px;
+  border-radius:14px;
+  box-shadow:0 0 25px rgba(255,0,0,0.4);
+}
+
+.titulo h1{
+  font-size:34px;
+  margin-bottom:10px;
+}
+
+.titulo p{
+  color:#aaa;
+}
+
+/* ===== PARTES ===== */
+.partes{
+  margin-top:40px;
+  text-align:center;
+}
+
+.partes h2{
+  margin-bottom:15px;
+}
+
+.partes a{
+  display:inline-block;
+  margin:6px;
+  padding:10px 18px;
+  background:#1b1b1b;
+  border-radius:6px;
+  text-decoration:none;
+  color:white;
+  transition:0.3s;
+}
+
+.partes a:hover{
+  background:#ff0000;
+}
+
+/* ===== INFO ===== */
+.info-juego{
+  margin-top:60px;
+  max-width:900px;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:left;
+  line-height:1.7;
+}
+
+.info-juego h2{
+  font-size:26px;
+  margin-bottom:20px;
+  border-bottom:2px solid #222;
+  padding-bottom:8px;
+}
+
+.nota{
+  text-align:center;
+  font-size:16px;
+  border:none;
+  margin-bottom:40px;
+  color:#bbb;
+}
+
+.requisitos, .info-list{
+  list-style:none;
+  padding:0;
+}
+
+.requisitos li, .info-list li{
+  margin-bottom:12px;
+  font-size:15px;
+}
+
+.check{
+  color:#4caf50;
+  margin-right:8px;
+  font-weight:bold;
+}
+
+hr{
+  border:none;
+  height:1px;
+  background:#222;
+  margin:40px 0;
+}
+
+/* ===== GALERÍA ===== */
+.galeria{
+  margin-top:40px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+  gap:15px;
+}
+
+.galeria img{
+  width:100%;
+  border-radius:10px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.galeria img:hover{
+  transform:scale(1.05);
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:900px){
+  .hero{
+    flex-direction:column;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<nav class="navbar">
+  <div class="nav-container">
+    <div class="logo">MS47</div>
+    <div class="nav-links">
+      <a href="index.html">Inicio</a>
+      <a href="categorias.html">Categorías</a>
+      <a href="https://www.youtube.com/@mastersensei-47/videos" target="_blank">YouTube</a>
+      <a href="https://www.instagram.com/master__sensei47" target="_blank">Instagram</a>
+      <a href="https://www.tiktok.com/@mastersensei47" target="_blank">TikTok</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+<!-- HERO -->
+<section class="hero">
+
+  <!-- VIDEO IZQUIERDO -->
+  <div class="video">
+    <iframe src="https://www.youtube.com/embed/1kcAvsdoA38" allowfullscreen></iframe>
+  </div>
+
+  <!-- CENTRO -->
+  <div class="titulo">
+
+    <!-- VIDEO NUEVO ARRIBA DEL TITULO -->
+    <div class="video-centro">
+      <iframe src="https://www.youtube.com/embed/yc_narOXOOY" allowfullscreen></iframe>
+    </div>
+
+    <h1>DRAGON BALL Sparking! ZERO</h1>
+    <p>↤ más juegos ➟</p>
+
+  </div>
+
+  <!-- VIDEO DERECHO -->
+  <div class="video">
+    <iframe src="https://www.youtube.com/embed/IACXdUo7QLw" allowfullscreen></iframe>
+  </div>
+
+</section>
+
+<!-- PARTES -->
+<section class="partes">
+  <h2>PESO TOTAL 28 GB (COMPRIMIDO)</h2>
+  <a href="https://www.mediafire.com/file/xfpqyn4s5rnd8dc/DRAGON+BALL+Sparking!+ZERO.7z.001/file">Parte 1</a>
+  <a href="https://www.mediafire.com/file/s9ta0ehtmfajq38/DRAGON_BALL_Sparking%21_ZERO.7z.002/file">Parte 2</a>
+  <a href="https://www.mediafire.com/file/70f95w8sv1yobis/DRAGON+BALL+Sparking!+ZERO.7z.003/file">Parte 3</a>
+  <a href="https://www.mediafire.com/file/h3bl4cri79sxt4n/DRAGON+BALL+Sparking!+ZERO.7z.004/file">Parte 4</a>
+</section>
+
+<!-- INFO -->
+<section class="info-juego">
+
+<h2 class="nota">(COLOCAR TODAS LAS PARTES EN UNA CARPETA Y DESCOMPRIMIR SOLO 1 PARTE)</h2>
+
+<h2>REQUISITOS DEL SISTEMA</h2>
+
+<ul class="requisitos">
+<li><span class="check">✔</span> <strong>Sistema operativo:</strong> Windows 10</li>
+<li><span class="check">✔</span> <strong>Procesador:</strong> Intel Core i5-9600K / AMD Ryzen 5 2600</li>
+<li><span class="check">✔</span> <strong>Memoria:</strong> 8 GB de RAM</li>
+<li><span class="check">✔</span> <strong>Gráficos:</strong> Nvidia GeForce GTX 980 / AMD Radeon RX 590 / Intel Arc A750</li>
+<li><span class="check">✔</span> <strong>DirectX:</strong> Versión 12</li>
+<li><span class="check">✔</span> <strong>Almacenamiento:</strong> 60 GB temporales - 29 GB final</li>
+</ul>
+
+<hr>
+
+<h2>INFORMACIÓN DEL JUEGO</h2>
+
+<ul class="info-list">
+<li><strong>Género:</strong> Acción</li>
+<li><strong>Plataforma:</strong> PC</li>
+<li><strong>Versión:</strong> v2014.013.003.009.008</li>
+<li><strong>Edición:</strong> Completa + Multijugador</li>
+</ul>
+
+</section>
+
+<!-- GALERÍA -->
+<section class="galeria">
+  <img src="imagen 1.jpeg">
+  <img src="imagen 2.jpeg">
+  <img src="imagen 3.jpeg">
+</section>
+
+</main>
+
+</body>
+</html>
